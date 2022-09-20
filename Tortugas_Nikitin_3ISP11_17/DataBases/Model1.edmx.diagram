@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="218229f83d8f4e4bb75b14088347bcac" Name="Diagram1">
+        <EntityTypeShape EntityType="Tortugas_NikitinModel.Category" Width="1.5" PointX="3" PointY="9.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="Tortugas_NikitinModel.DIsh" Width="1.5" PointX="5.25" PointY="9" IsExpanded="true" />
+        <EntityTypeShape EntityType="Tortugas_NikitinModel.Gender" Width="1.5" PointX="0.75" PointY="1.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="Tortugas_NikitinModel.Order" Width="1.5" PointX="5.25" PointY="1.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="Tortugas_NikitinModel.OrderDish" Width="1.5" PointX="7.5" PointY="1.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="Tortugas_NikitinModel.sysdiagrams" Width="1.5" PointX="5.75" PointY="4.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Tortugas_NikitinModel.Table" Width="1.5" PointX="3" PointY="5.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="Tortugas_NikitinModel.Waiter" Width="1.5" PointX="3" PointY="1" IsExpanded="true" />
+        <AssociationConnector Association="Tortugas_NikitinModel.FK_DIsh_Category" ManuallyRouted="false" />
+        <AssociationConnector Association="Tortugas_NikitinModel.FK_OrderDish_DIsh" ManuallyRouted="false" />
+        <AssociationConnector Association="Tortugas_NikitinModel.FK_Waiter_Gender" ManuallyRouted="false" />
+        <AssociationConnector Association="Tortugas_NikitinModel.FK_Order_Table" ManuallyRouted="false" />
+        <AssociationConnector Association="Tortugas_NikitinModel.FK_Order_Waiter" ManuallyRouted="false" />
+        <AssociationConnector Association="Tortugas_NikitinModel.FK_OrderDish_Order" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
