@@ -12,6 +12,10 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using Tortugas_Nikitin_3ISP11_17.DataBases;
+using Tortugas_Nikitin_3ISP11_17.Windows;
+using Tortugas_Nikitin_3ISP11_17.ClassHelper;
+using Tortugas_Nikitin_3ISP11_17.Properties;
 
 namespace Tortugas_Nikitin_3ISP11_17
 {
@@ -20,9 +24,27 @@ namespace Tortugas_Nikitin_3ISP11_17
     /// </summary>
     public partial class MainWindow : Window
     {
-        public MainWindow()
+        private void btnGoToMenu_Click(object sender, RoutedEventArgs e)
         {
-            InitializeComponent();
+            MenuWindow menuWindow = new MenuWindow();
+            menuWindow.Show();
+            this.Close();
         }
+
     }
 }
+
+
+        
+        
+        
+        
+        
+        
+        
+    
+       
+
+
+
+
