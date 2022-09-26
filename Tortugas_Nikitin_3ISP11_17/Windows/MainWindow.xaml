@@ -6,8 +6,9 @@
         xmlns:local="clr-namespace:Tortugas_Nikitin_3ISP11_17"
         mc:Ignorable="d"
         Title="MainWindow" 
-        Height="1194" 
-        Width="834">
+        Height="1100" 
+        Width="830"
+        WindowStartupLocation="CenterScreen">
     <Grid>
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="*"/>
@@ -26,7 +27,7 @@
                 HorizontalAlignment="Center" 
                 Margin="0,75,0,0" 
                 VerticalAlignment="Top"
-                Click ="btnGoToMenu_Click"
+                Click="Button_Click"
                 Height="72" 
                 Width="92" 
                 Background="#FFEC3030"

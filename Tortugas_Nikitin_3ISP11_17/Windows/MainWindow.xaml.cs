@@ -16,6 +16,7 @@ using Tortugas_Nikitin_3ISP11_17.DataBases;
 using Tortugas_Nikitin_3ISP11_17.Windows;
 using Tortugas_Nikitin_3ISP11_17.ClassHelper;
 using Tortugas_Nikitin_3ISP11_17.Properties;
+using Tortugas_Nikitin_3ISP11_17.Windows;
 
 namespace Tortugas_Nikitin_3ISP11_17
 {
@@ -24,13 +25,12 @@ namespace Tortugas_Nikitin_3ISP11_17
     /// </summary>
     public partial class MainWindow : Window
     {
-        private void btnGoToMenu_Click(object sender, RoutedEventArgs e)
+        private void Button_Click(object sender, RoutedEventArgs e)
         {
-            MenuWindow menuWindow = new MenuWindow();
-            menuWindow.Show();
+            MenuWindow menuwindow = new MenuWindow();
+            menuwindow.Show();
             this.Close();
         }
-
     }
 }
 
