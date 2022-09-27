@@ -77,7 +77,7 @@
             <RowDefinition Height="1*"/>
         </Grid.RowDefinitions>
 
-        <TextBlock Text="Список читателей"
+        <TextBlock Text="Меню"
                    VerticalAlignment="Center"
                    HorizontalAlignment="Center"
                    FontSize="25"

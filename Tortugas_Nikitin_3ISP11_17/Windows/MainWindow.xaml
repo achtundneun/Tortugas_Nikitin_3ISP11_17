@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Tortugas_Nikitin_3ISP11_17"
         mc:Ignorable="d"
-        Title="MainWindow" 
+        Title="MainWindow"
         Height="1100" 
         Width="830"
         WindowStartupLocation="CenterScreen">
@@ -15,35 +15,79 @@
             <ColumnDefinition Width="*"/>
             <ColumnDefinition Width="*"/>
         </Grid.ColumnDefinitions>
-        
+
         <Grid.RowDefinitions>
+            <RowDefinition Height ="*"/>
+            <RowDefinition Height ="*"/>
+            <RowDefinition Height ="*"/>
+            <RowDefinition Height ="*"/>
+            <RowDefinition Height ="*"/>
             <RowDefinition Height ="*"/>
             <RowDefinition Height ="*"/>
             <RowDefinition Height ="*"/>
             <RowDefinition Height ="*"/>
         </Grid.RowDefinitions>
 
-        <Button Content="Button" 
-                HorizontalAlignment="Center" 
-                Margin="0,75,0,0" 
-                VerticalAlignment="Top"
+        <Button Content="" 
+                HorizontalAlignment="Center"  
                 Click="Button_Click"
                 Height="72" 
-                Width="92" 
-                Background="#FFEC3030"
-                Grid.Column="1"
-                Grid.Row="3"/>
+                Width="455"
+                Grid.ColumnSpan="3"
+                Grid.Column="0"
+                Grid.Row="7">
+            <Button.Background>
+                <ImageBrush ImageSource="/Images/Button.png"/>
+            </Button.Background>
+        </Button>
 
         <Label Content="Выбор стола " 
                HorizontalAlignment="Center" 
-               Margin="0,189,0,0" 
-               VerticalAlignment="Top" 
+               Margin="0,189,0,0"
                Height="54" 
                FontFamily="40"
                Width="278" 
                FontSize="36" 
                HorizontalContentAlignment="Center"
-               Grid.RowSpan="1" 
-               Grid.Column="1"/>
+               VerticalAlignment="Bottom"
+               Grid.RowSpan="3"
+               Grid.Column="1" 
+               FontWeight="Bold"
+               Foreground="#FF263A35"/>
+
+        <Image x:Name="Logo"
+               Grid.Column="0"
+               Grid.RowSpan="3" 
+               Grid.ColumnSpan="3"
+               Margin="20,7,20,70">
+            <Image.Source>
+                <ImageSource>C:\Users\Савва\source\repos\Tortugas_Nikitin_3ISP11_17\Tortugas_Nikitin_3ISP11_17\Images\Logo.png</ImageSource>
+            </Image.Source>
+        </Image>
+
+        <Image x:Name="StatusBar"
+            HorizontalAlignment="Center"
+            Height="47" 
+            VerticalAlignment="Top"
+            Width="827" 
+            Grid.ColumnSpan="3"
+            Grid.Column="0"
+            Grid.Row="0">
+            <Image.Source>
+                <ImageSource>C:\Users\Савва\source\repos\Tortugas_Nikitin_3ISP11_17\Tortugas_Nikitin_3ISP11_17\Images\Status Bar.png</ImageSource>
+            </Image.Source>
+        </Image>
+
+        <Image x:Name="Tables"
+               Grid.Column="0"
+               Grid.Row="3"
+               Grid.RowSpan="4" 
+               Grid.ColumnSpan="3">
+            <Image.Source>
+                <ImageSource>C:\Users\Савва\source\repos\Tortugas_Nikitin_3ISP11_17\Tortugas_Nikitin_3ISP11_17\Images\Rectangle 23.png</ImageSource>
+            </Image.Source>
+        </Image>
+
+
     </Grid>
 </Window>
