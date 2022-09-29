@@ -6,10 +6,106 @@
         xmlns:local="clr-namespace:Tortugas_Nikitin_3ISP11_17.Windows"
         mc:Ignorable="d"
         Title="OrderWindow" 
-        Height="1194" 
-        Width="834"
+        Height="1100" 
+        Width="830"
         WindowStartupLocation="CenterScreen">
     <Grid>
-        
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height ="*"/>
+            <RowDefinition Height ="*"/>
+            <RowDefinition Height ="*"/>
+            <RowDefinition Height ="*"/>
+            <RowDefinition Height ="*"/>
+            <RowDefinition Height ="*"/>
+            <RowDefinition Height ="*"/>
+            <RowDefinition Height ="*"/>
+            <RowDefinition Height ="*"/>
+        </Grid.RowDefinitions>
+
+        <Button HorizontalAlignment="Center"  
+                Click="Chek_Click"
+                Height="72" 
+                Width="455"
+                Grid.ColumnSpan="3"
+                Grid.Column="0"
+                Grid.Row="7">
+            <Button.Background>
+                <ImageBrush ImageSource="/Images/ButtonOrder.png"/>
+            </Button.Background>
+        </Button>
+
+        <Label Content="Ваш чек" 
+               HorizontalAlignment="Center" 
+               Margin="0,189,0,0"
+               Height="54" 
+               FontFamily="40"
+               Width="278" 
+               FontSize="36" 
+               HorizontalContentAlignment="Center"
+               VerticalAlignment="Bottom"
+               Grid.RowSpan="3"
+               Grid.Column="1" 
+               FontWeight="Bold"
+               Foreground="#FF263A35"/>
+
+        <Image x:Name="Logo"
+               Grid.Column="0"
+               Grid.RowSpan="3" 
+               Grid.ColumnSpan="3"
+               Margin="20,7,20,70">
+            <Image.Source>
+                <ImageSource>C:\Users\Савва\source\repos\Tortugas_Nikitin_3ISP11_17\Tortugas_Nikitin_3ISP11_17\Images\Logo.png</ImageSource>
+            </Image.Source>
+        </Image>
+
+        <Image x:Name="StatusBar"
+            HorizontalAlignment="Center"
+            Height="47" 
+            VerticalAlignment="Top"
+            Width="827" 
+            Grid.ColumnSpan="3"
+            Grid.Column="0"
+            Grid.Row="0">
+            <Image.Source>
+                <ImageSource>C:\Users\Савва\source\repos\Tortugas_Nikitin_3ISP11_17\Tortugas_Nikitin_3ISP11_17\Images\Status Bar.png</ImageSource>
+            </Image.Source>
+        </Image>
+
+        <Image
+            HorizontalAlignment="Center"
+            Height="100"
+            Grid.Row="8" 
+            VerticalAlignment="Bottom" 
+            Width="826" 
+            Grid.Column="0"
+            Grid.ColumnSpan="3">
+
+            <Image.Source>
+                <ImageSource>C:\Users\Савва\source\repos\Tortugas_Nikitin_3ISP11_17\Tortugas_Nikitin_3ISP11_17\Images\Tab Bar.png</ImageSource>
+            </Image.Source>
+        </Image>
+
+
+        <ListView 
+            Grid.Row="2"
+            d:ItemsSource="{d:SampleData ItemCount=5}"
+            Grid.ColumnSpan="3" 
+            Grid.RowSpan="5" 
+            Background="#FF929292"
+            Margin="0,120,0,0">
+            <ListView.View>
+                <GridView>
+                    <GridViewColumn/>
+                </GridView>
+            </ListView.View>
+        </ListView>
+
+
     </Grid>
 </Window>

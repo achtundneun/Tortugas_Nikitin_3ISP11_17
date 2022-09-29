@@ -1,132 +1,119 @@
-﻿<Window x:Class="Tortugas_Nikitin_3ISP11_17.Windows.MenuWindow"
+﻿<Window
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Tortugas_Nikitin_3ISP11_17.Windows"
+        xmlns:DataBases="clr-namespace:Tortugas_Nikitin_3ISP11_17.DataBases" x:Class="Tortugas_Nikitin_3ISP11_17.Windows.MenuWindow"
         mc:Ignorable="d"
         Title="MenuWindow" 
         ResizeMode="NoResize"
         WindowStartupLocation="CenterScreen"
         Height="1100" 
         Width="830">
-    <!--<Window.Resources>
-        <Style x:Key="FocusVisual">
-            <Setter Property="Control.Template">
-                <Setter.Value>
-                    <ControlTemplate>
-                        <Rectangle Margin="2" SnapsToDevicePixels="true" Stroke="{DynamicResource {x:Static SystemColors.ControlTextBrushKey}}" StrokeThickness="1" StrokeDashArray="1 2"/>
-                    </ControlTemplate>
-                </Setter.Value>
-            </Setter>
-        </Style>
-        <SolidColorBrush x:Key="Button.Static.Background" Color="#FFDDDDDD"/>
-        <SolidColorBrush x:Key="Button.Static.Border" Color="#FF707070"/>
-        <SolidColorBrush x:Key="Button.MouseOver.Background" Color="#FFBEE6FD"/>
-        <SolidColorBrush x:Key="Button.MouseOver.Border" Color="#FF3C7FB1"/>
-        <SolidColorBrush x:Key="Button.Pressed.Background" Color="#FFC4E5F6"/>
-        <SolidColorBrush x:Key="Button.Pressed.Border" Color="#FF2C628B"/>
-        <SolidColorBrush x:Key="Button.Disabled.Background" Color="#FFF4F4F4"/>
-        <SolidColorBrush x:Key="Button.Disabled.Border" Color="#FFADB2B5"/>
-        <SolidColorBrush x:Key="Button.Disabled.Foreground" Color="#FF838383"/>
-        <Style x:Key="ButtonStyleRound" TargetType="{x:Type Button}">
-            <Setter Property="FocusVisualStyle" Value="{StaticResource FocusVisual}"/>
-            <Setter Property="Background" Value="{StaticResource Button.Static.Background}"/>
-            <Setter Property="BorderBrush" Value="{StaticResource Button.Static.Border}"/>
-            <Setter Property="Foreground" Value="{DynamicResource {x:Static SystemColors.ControlTextBrushKey}}"/>
-            <Setter Property="BorderThickness" Value="1"/>
-            <Setter Property="HorizontalContentAlignment" Value="Center"/>
-            <Setter Property="VerticalContentAlignment" Value="Center"/>
-            <Setter Property="Padding" Value="1"/>
-            <Setter Property="Template">
-                <Setter.Value>
-                    <ControlTemplate TargetType="{x:Type Button}">
-                        <Border x:Name="border" CornerRadius="15" BorderBrush="{TemplateBinding BorderBrush}" BorderThickness="{TemplateBinding BorderThickness}" Background="{TemplateBinding Background}" SnapsToDevicePixels="true">
-                            <ContentPresenter x:Name="contentPresenter" Focusable="False" HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}" Margin="{TemplateBinding Padding}" RecognizesAccessKey="True" SnapsToDevicePixels="{TemplateBinding SnapsToDevicePixels}" VerticalAlignment="{TemplateBinding VerticalContentAlignment}"/>
-                        </Border>
-                        <ControlTemplate.Triggers>
-                            <Trigger Property="IsDefaulted" Value="true">
-                                <Setter Property="BorderBrush" TargetName="border" Value="{DynamicResource {x:Static SystemColors.HighlightBrushKey}}"/>
-                            </Trigger>
-                            <Trigger Property="IsMouseOver" Value="true">
-                                <Setter Property="Background" TargetName="border" Value="{StaticResource Button.MouseOver.Background}"/>
-                                <Setter Property="BorderBrush" TargetName="border" Value="{StaticResource Button.MouseOver.Border}"/>
-                            </Trigger>
-                            <Trigger Property="IsPressed" Value="true">
-                                <Setter Property="Background" TargetName="border" Value="{StaticResource Button.Pressed.Background}"/>
-                                <Setter Property="BorderBrush" TargetName="border" Value="{StaticResource Button.Pressed.Border}"/>
-                            </Trigger>
-                            <Trigger Property="IsEnabled" Value="false">
-                                <Setter Property="Background" TargetName="border" Value="{StaticResource Button.Disabled.Background}"/>
-                                <Setter Property="BorderBrush" TargetName="border" Value="{StaticResource Button.Disabled.Border}"/>
-                                <Setter Property="TextElement.Foreground" TargetName="contentPresenter" Value="{StaticResource Button.Disabled.Foreground}"/>
-                            </Trigger>
-                        </ControlTemplate.Triggers>
-                    </ControlTemplate>
-                </Setter.Value>
-            </Setter>
-        </Style>
-    </Window.Resources>-->
     <Grid>
-       
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+
         <Grid.RowDefinitions>
-            <RowDefinition Height="40"/>
-            <RowDefinition Height="40"/>
-            <RowDefinition Height="40"/>
-            <RowDefinition Height="8*"/>
-            <RowDefinition Height="1*"/>
+            <RowDefinition Height ="*"/>
+            <RowDefinition Height ="*"/>
+            <RowDefinition Height ="*"/>
+            <RowDefinition Height ="*"/>
+            <RowDefinition Height ="*"/>
+            <RowDefinition Height ="*"/>
+            <RowDefinition Height ="*"/>
+            <RowDefinition Height ="*"/>
+            <RowDefinition Height ="*"/>
         </Grid.RowDefinitions>
 
-        <TextBlock Text="Меню"
-                   VerticalAlignment="Center"
-                   HorizontalAlignment="Center"
-                   FontSize="25"
-                   Background="#FF000120"
-                   Foreground="#FFFEFFFA"
-                   FontFamily="Impact"/>
+        <Button HorizontalAlignment="Center"  
+                Click="Chek_Click"
+                Height="72" 
+                Width="455"
+                Grid.ColumnSpan="3"
+                Grid.Column="0"
+                Grid.Row="7">
+            <Button.Background>
+                <ImageBrush ImageSource="/Images/ButtonChek.png"/>
+            </Button.Background>
+        </Button>
 
-        <WrapPanel Grid.Row="1" VerticalAlignment="Center">
-            <TextBlock Text="Поиск"
-                       Margin="20 0 10 0"
-                       FontSize="18"
-                       Background="#FF000120"
-                       Foreground="#FFFEFFFA"
-                       FontFamily="Impact"/>
+        <Label Content="Меню" 
+               HorizontalAlignment="Center" 
+               Margin="0,189,0,0"
+               Height="54" 
+               FontFamily="40"
+               Width="278" 
+               FontSize="36" 
+               HorizontalContentAlignment="Center"
+               VerticalAlignment="Bottom"
+               Grid.RowSpan="3"
+               Grid.Column="1" 
+               FontWeight="Bold"
+               Foreground="#FF263A35"/>
 
-            
+        <Image x:Name="Logo"
+               Grid.Column="0"
+               Grid.RowSpan="3" 
+               Grid.ColumnSpan="3"
+               Margin="20,7,20,70">
+            <Image.Source>
+                <ImageSource>C:\Users\Савва\source\repos\Tortugas_Nikitin_3ISP11_17\Tortugas_Nikitin_3ISP11_17\Images\Logo.png</ImageSource>
+            </Image.Source>
+        </Image>
 
-        </WrapPanel>
+        <Image x:Name="StatusBar"
+            HorizontalAlignment="Center"
+            Height="47" 
+            VerticalAlignment="Top"
+            Width="827" 
+            Grid.ColumnSpan="3"
+            Grid.Column="0"
+            Grid.Row="0">
+            <Image.Source>
+                <ImageSource>C:\Users\Савва\source\repos\Tortugas_Nikitin_3ISP11_17\Tortugas_Nikitin_3ISP11_17\Images\Status Bar.png</ImageSource>
+            </Image.Source>
+        </Image>
 
 
 
-        <Button Grid.Row="4"
-                x:Name="btnAddReader"
-                Content="+"
-                FontSize="20"
-                Foreground="White"
-                Background="#FF49E449"
-                VerticalContentAlignment="Top"
-                HorizontalContentAlignment="Center"
-                Width="30"
-                Height="30"
-                Margin="0 0 10 0"
-                HorizontalAlignment="Right" 
-               />
 
-        <Button x:Name="BackBtn"
-                    Grid.Row="4"
-                    Content="Назад"
-                    FontSize="20"
-                    Background="#FF000120"
-                    Foreground="#FFFEFFFA"
-                    FontFamily="Impact"
-                    VerticalContentAlignment="Top"
-                    HorizontalContentAlignment="Center"
-                    Width="100"
-                    Height="30"
-                    Margin="0 0 500 0"
-                    HorizontalAlignment="Right" 
-                    
-              />
+        <Image
+            HorizontalAlignment="Center"
+            Height="100"
+            Grid.Row="8" 
+            VerticalAlignment="Bottom" 
+            Width="826" 
+            Grid.Column="0"
+            Grid.ColumnSpan="3">
+
+            <Image.Source>
+                <ImageSource>C:\Users\Савва\source\repos\Tortugas_Nikitin_3ISP11_17\Tortugas_Nikitin_3ISP11_17\Images\Tab Bar.png</ImageSource>
+            </Image.Source>
+        </Image>
+
+
+        <ListView 
+            Grid.Row="2"
+            d:ItemsSource="{d:SampleData ItemCount=5}"
+            Grid.ColumnSpan="3" 
+            Grid.RowSpan="5" 
+            Background="#FF929292"
+            Margin="0,120,0,0">
+            <ListView.View>
+                <GridView>
+                    <GridViewColumn/>
+                </GridView>
+            </ListView.View>
+            <ListView.DataContext>
+                <DataBases:DIsh/>
+            </ListView.DataContext>
+        </ListView>
+
+
     </Grid>
 </Window>

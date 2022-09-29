@@ -82,12 +82,25 @@
                Grid.Column="0"
                Grid.Row="3"
                Grid.RowSpan="4" 
-               Grid.ColumnSpan="3">
+               Grid.ColumnSpan="3" Stretch="Fill" StretchDirection="Both">
             <Image.Source>
                 <ImageSource>C:\Users\Савва\source\repos\Tortugas_Nikitin_3ISP11_17\Tortugas_Nikitin_3ISP11_17\Images\Rectangle 23.png</ImageSource>
             </Image.Source>
         </Image>
 
+        <Image
+            HorizontalAlignment="Center"
+            Height="100"
+            Grid.Row="8" 
+            VerticalAlignment="Bottom" 
+            Width="826" 
+            Grid.Column="0"
+            Grid.ColumnSpan="3">
+
+            <Image.Source>
+                <ImageSource>C:\Users\Савва\source\repos\Tortugas_Nikitin_3ISP11_17\Tortugas_Nikitin_3ISP11_17\Images\Tab Bar.png</ImageSource>
+            </Image.Source>
+        </Image>
 
     </Grid>
 </Window>

@@ -23,5 +23,17 @@ namespace Tortugas_Nikitin_3ISP11_17.Windows
         {
             InitializeComponent();
         }
+
+        private void DataGrid_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+
+        }
+
+        private void Chek_Click(object sender, RoutedEventArgs e)
+        {
+            OrderWindow orderwindow = new OrderWindow();
+            orderwindow.Show();
+            this.Close();
+        }
     }
 }
