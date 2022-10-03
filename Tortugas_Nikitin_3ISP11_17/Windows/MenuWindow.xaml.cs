@@ -11,6 +11,9 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
+using Tortugas_Nikitin_3ISP11_17.DataBases;
+using Tortugas_Nikitin_3ISP11_17.ClassHelper;
+
 
 namespace Tortugas_Nikitin_3ISP11_17.Windows
 {
@@ -19,14 +22,21 @@ namespace Tortugas_Nikitin_3ISP11_17.Windows
     /// </summary>
     public partial class MenuWindow : Window
     {
+
+        List<DIsh> productList = new List<DIsh>();
+
         public MenuWindow()
         {
             InitializeComponent();
+
+            listProduct.ItemsSource = AppData.Context.DIsh.ToList();
+
+            Filter();
         }
 
-        private void DataGrid_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        private void Filter()
         {
-
+            productList = AppData.Context.DIsh.ToList();
         }
 
         private void Chek_Click(object sender, RoutedEventArgs e)
