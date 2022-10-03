@@ -6,9 +6,10 @@
         xmlns:local="clr-namespace:Tortugas_Nikitin_3ISP11_17"
         mc:Ignorable="d"
         Title="MainWindow"
+        ResizeMode="NoResize"
+        WindowStartupLocation="CenterScreen"
         Height="1100" 
-        Width="830"
-        WindowStartupLocation="CenterScreen">
+        Width="830">
     <Grid>
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="*"/>

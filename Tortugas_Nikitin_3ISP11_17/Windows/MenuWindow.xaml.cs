@@ -35,5 +35,19 @@ namespace Tortugas_Nikitin_3ISP11_17.Windows
             orderwindow.Show();
             this.Close();
         }
+
+        private void BtnCategory_Click(object sender, RoutedEventArgs e)
+        {
+            CategoriesWindow categorieswindow = new CategoriesWindow();
+            categorieswindow.Show();
+            this.Close();
+        }
+
+        private void Home_Click(object sender, RoutedEventArgs e)
+        {
+            //MainWindow mainwindow = new MainWindow();
+            //mainwindow.Show();
+            this.Close();
+        }
     }
 }

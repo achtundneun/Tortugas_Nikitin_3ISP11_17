@@ -114,6 +114,67 @@
             </ListView.DataContext>
         </ListView>
 
+        <Button 
+            Grid.Column="2"
+            Content="Категории блюд" 
+            HorizontalAlignment="Left" 
+            Margin="104,66,0,0"
+            Grid.Row="2"
+            Click="BtnCategory_Click"
+            VerticalAlignment="Top" 
+            Height="49" 
+            Width="136" 
+            Foreground="White">
+            <Button.Background>
+                <ImageBrush ImageSource="/Images/Rectangle 24.png"/>
+            </Button.Background>
+        </Button>
+
+        <Button 
+            x:Name="Home"
+            Click="Home_Click"
+            Content="Домой"
+            HorizontalAlignment="Left"
+            Margin="10,48,0,0"
+            Grid.Row="8" 
+            VerticalAlignment="Top"
+            Height="50" 
+            Width="70" 
+            Opacity="0"/>
+
+        <Button 
+            Content="Поиск блюда"
+            HorizontalAlignment="Left"
+            Margin="168,48,0,0"
+            Grid.Row="8" 
+            VerticalAlignment="Top"
+            Height="50" 
+            Width="70" 
+            Opacity="0"/>
+
+        <Button 
+            Content="Поддержка"
+            HorizontalAlignment="Left"
+            Margin="271,48,0,0"
+            Grid.Row="8" 
+            VerticalAlignment="Top"
+            Height="50" 
+            Width="70" 
+            Opacity="0"
+            Grid.Column="1" 
+            Grid.ColumnSpan="2"/>
+
+        <Button 
+            Content="Адиин"
+            HorizontalAlignment="Left"
+            Margin="150,48,0,0"
+            Grid.Row="8" 
+            VerticalAlignment="Top"
+            Height="50" 
+            Width="70" 
+            Opacity="0" 
+            Grid.Column="2"/>
+
 
     </Grid>
 </Window>

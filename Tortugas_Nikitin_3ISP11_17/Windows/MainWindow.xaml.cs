@@ -16,7 +16,6 @@ using Tortugas_Nikitin_3ISP11_17.DataBases;
 using Tortugas_Nikitin_3ISP11_17.Windows;
 using Tortugas_Nikitin_3ISP11_17.ClassHelper;
 using Tortugas_Nikitin_3ISP11_17.Properties;
-using Tortugas_Nikitin_3ISP11_17.Windows;
 
 namespace Tortugas_Nikitin_3ISP11_17
 {
@@ -28,8 +27,10 @@ namespace Tortugas_Nikitin_3ISP11_17
         private void Button_Click(object sender, RoutedEventArgs e)
         {
             MenuWindow menuwindow = new MenuWindow();
-            menuwindow.Show();
-            this.Close();
+            this.Hide();
+
+            menuwindow.ShowDialog();
+            this.Show();
         }
     }
 }

@@ -6,9 +6,10 @@
         xmlns:local="clr-namespace:Tortugas_Nikitin_3ISP11_17.Windows"
         mc:Ignorable="d"
         Title="OrderWindow" 
+        ResizeMode="NoResize"
+        WindowStartupLocation="CenterScreen"
         Height="1100" 
-        Width="830"
-        WindowStartupLocation="CenterScreen">
+        Width="830">
     <Grid>
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="*"/>
@@ -29,7 +30,7 @@
         </Grid.RowDefinitions>
 
         <Button HorizontalAlignment="Center"  
-                Click="Chek_Click"
+                
                 Height="72" 
                 Width="455"
                 Grid.ColumnSpan="3"

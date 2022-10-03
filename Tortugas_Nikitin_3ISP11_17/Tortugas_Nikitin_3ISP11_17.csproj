@@ -189,6 +189,7 @@
       <DependentUpon>Model1.edmx</DependentUpon>
       <LastGenOutput>Model1.cs</LastGenOutput>
     </Content>
+    <Resource Include="Images\Rectangle 24.png" />
     <Resource Include="Images\ButtonOrder.png" />
     <Resource Include="Images\ButtonChek.png" />
     <Resource Include="Images\Tab Bar.png" />
