@@ -99,6 +99,7 @@
 
         <ListView x:Name="listProduct"
                   Grid.Row="3"
+                  Grid.ColumnSpan="3"
                   ScrollViewer.HorizontalScrollBarVisibility="Disabled"
                   Background="{x:Null}" 
                   BorderBrush="{x:Null}"
