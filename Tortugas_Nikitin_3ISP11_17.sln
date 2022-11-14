@@ -5,6 +5,8 @@ VisualStudioVersion = 17.1.32421.90
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tortugas_Nikitin_3ISP11_17", "Tortugas_Nikitin_3ISP11_17\Tortugas_Nikitin_3ISP11_17.csproj", "{4B7D42F4-94D0-4388-B55D-8729AF780F36}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tortugas_Nikitin_3ISP11_17_Test", "Tortugas_Nikitin_3ISP11_17_Test\Tortugas_Nikitin_3ISP11_17_Test.csproj", "{EC8D2E39-2D96-4BCE-AE1C-BA9758BAEBB8}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{4B7D42F4-94D0-4388-B55D-8729AF780F36}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4B7D42F4-94D0-4388-B55D-8729AF780F36}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4B7D42F4-94D0-4388-B55D-8729AF780F36}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EC8D2E39-2D96-4BCE-AE1C-BA9758BAEBB8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EC8D2E39-2D96-4BCE-AE1C-BA9758BAEBB8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EC8D2E39-2D96-4BCE-AE1C-BA9758BAEBB8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EC8D2E39-2D96-4BCE-AE1C-BA9758BAEBB8}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
